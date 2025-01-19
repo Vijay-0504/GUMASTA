@@ -1,0 +1,188 @@
+/* Global reset for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #0eb2d6); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Header styling */
+h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Quote container styling */
+.quote-container {
+    font-size: 1.3em;
+    font-style: italic;
+    color: #555;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Balance styling */
+.balance {
+    margin-bottom: 20px;
+}
+
+#balance {
+    color: #2e7d32;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Form styling */
+.form input {
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 1.1em;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+/* Input focus effect */
+.form input:focus {
+    border-color: #ff7e5f;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for Add Income button */
+.income-btn {
+    background-color: #4caf50; /* Green for income */
+    color: white;
+}
+
+/* Styling for Deduct Expense button */
+.expense-btn {
+    background-color: #f44336; /* Red for expenses */
+    color: white;
+}
+
+/* Styling for Clear Data button */
+.clear-btn {
+    background-color: #ff9800; /* Orange for clear */
+    color: white;
+}
+
+/* Styling for Print Statement button */
+.print-btn {
+    background-color: #2196f3; /* Blue for print */
+    color: white;
+}
+
+/* Chart container styling */
+.chart-container {
+    margin-top: 20px;
+    height: 300px;
+}
+
+/* Transaction list styling */
+.transactions ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Transaction item styling */
+.transactions li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for even transactions */
+.transactions li:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+/* Income and expense color styling */
+.income {
+    color: #4caf50;
+}
+
+.expense {
+    color: #f44336;
+}
+
+/* Responsive styling for mobile screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    #balance {
+        font-size: 2em;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1.1em;
+    }
+
+    .form input {
+        padding: 10px;
+        font-size: 1.1em;
+    }
+
+    .transactions li {
+        font-size: 0.9em;
+    }
+}
