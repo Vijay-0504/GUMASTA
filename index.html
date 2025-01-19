@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gumasta:Track Your Expenses</title>
+    <link rel="icon" href="icons8-cost-saving-68.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gumasta</h1>
+        <h2>Track Your Expenses</h2>
+
+        <div class="quote-container" id="quote-container"></div>
+
+        <h2>Balance: <span id="balance">₹ 0.00</span></h2>
+
+        <div class="form">
+            <input type="text" id="description" placeholder="Description" />
+            <input type="number" id="amount" placeholder="Amount" />
+        </div>
+
+        <button class="income-btn" onclick="addIncome()">Add Income</button>
+        <button class="expense-btn" onclick="deductExpense()">Deduct Expense</button>
+        <button class="clear-btn" onclick="clearData()">Clear Data (This action can't be undone)</button>
+        <button class="print-btn" onclick="printStatement()">Print Statement</button>
+
+        <ul id="transaction-list"></ul>
+
+        <canvas id="incomeExpenseChart"></canvas>
+
+        <footer>
+            <p>&copy; 2025 Vijay. All rights reserved. India</p>
+            <p>+91 9493550279</p>
+            
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Script1.js"></script>
+</body>
+</html>
